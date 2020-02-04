@@ -1,0 +1,8 @@
+class Days1
+{
+  public static void main(String args[])
+  {
+    Day ob=new Day();
+    ob.calculateNumDays(3);
+  }
+}
