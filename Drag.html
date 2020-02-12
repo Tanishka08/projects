@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1
+        {
+
+        
+        width: 350px;
+        height: 350px;
+        border: red solid 2px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="div1" ondrop="onDropPicture(event)" ondragover="allowDefault(event)">
+</div>
+<img src="logos.png" id="img1" draggable="true" ondragstart="onDrag(event)">
+    <script>
+        function allowDefault(event)
+        {
+            //console.log("onDragOver");
+            event.preventDefault();
+        }
+        function onDrag(event)
+        {
+            event.dataTransfer.setData("data",event.target.id);
+        }
+        function onDropPicture(event)
+        {
+            //console.log.("onDrop");
+            var data=event.dataTransfer.getData("data");
+            event.target.appendChild(document.getElementById(data));
+        }
+        
+    </script>
+
+</body>
+</html>
