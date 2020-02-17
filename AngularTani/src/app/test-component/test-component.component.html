@@ -1,0 +1,22 @@
+<p>test-component works!</p>
+<ul>
+    <div class="container">
+        <h1>Employee List</h1>
+        <table class="table">
+            <thread>
+                <tr>
+                    <th>Code</th>
+                <th>Name</th>
+            <th>Age</th>
+        </tr>
+            </thread>
+            <tbody>
+                <tr *ngFor="let employee of employees">
+                    <td>{{employee.emp1}}</td>
+                <td>{{employee.empName}}</td>
+            <td>{{employee.age}}</td>    
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</ul>
