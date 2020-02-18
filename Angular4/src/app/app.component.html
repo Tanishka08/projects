@@ -1,0 +1,23 @@
+<app-employee></app-employee>
+<app-employee-list></app-employee-list>
+<table class="table table-striped">
+
+    <thead class="table dark">
+        <tr>
+            <th>EmpId</th>
+<th>Name</th>
+<th>Gender</th>
+<th>Salary</th>        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.EmpId}}</td>
+            <td>{{employee.Name | links : employee.Gender}}</td>
+            <td>{{employee.Gender}}</td>
+            <td>{{employee.Salary}}</td>
+            
+        </tr>
+            
+        
+    </tbody>
+</table>
