@@ -1,0 +1,14 @@
+<div class="container">
+    <h2 class="text-Centre">All Categories</h2>
+<div class="row">
+    <div class="col-lg-3">
+        <div class="card" style="width: 16rem;" *ngFor="let category of categories">
+        <img src="{{_image_url+category.catImage}}" class="card-img-top" alt=""/>
+    <div class="card-body">
+        <h5 class="card-text">{{category.catName}}</h5>
+    <a href="#" class="btn btn-primary">Go SomeWhere</a>
+    </div>
+    </div>
+</div>
+
+</div>
