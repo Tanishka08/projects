@@ -1,0 +1,4 @@
+server:
+  port: 8060
+spring:  application:    name: movie-service
+eureka:  client:    service-url:      defaultZone: http://locahost:8761/eureka/
